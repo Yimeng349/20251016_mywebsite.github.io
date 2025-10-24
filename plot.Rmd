@@ -1,0 +1,19 @@
+---
+title: "here are some plots"
+output: 
+  html_document:
+    theme: cerulean
+---
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+```{r}
+plot_df = 
+  tibble(
+    x = rnorm(100, mean = 1, sd = 2),
+    y = 1 + 2 * x + rnorm(100)
+  )
+```
+
+
